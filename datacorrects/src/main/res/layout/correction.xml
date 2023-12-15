@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/private_center_padding">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_padding_style_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/position"
+                />
+
+            <TextView
+                android:id="@+id/tv_position"
+                style="@style/tv_padding_style_small"
+                android:paddingLeft="0dp"
+                android:paddingRight="5dp"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview"
+                android:background="@drawable/bg_white_gray_corner"
+                android:drawableRight="@drawable/ic_arrow_pull"
+                android:gravity="center"
+                android:textColor="@color/black"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="料名称:"
+                style="@style/tv_padding_style_small"
+                android:textSize="@dimen/typeface_size_two" />
+
+            <TextView
+                android:id="@+id/id_tv_name"
+                style="@style/tv_padding_style_small"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_gray_corner"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                 />
+
+            <TextView
+                style="@style/tv_padding_style_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="泵名称:"
+                android:textSize="@dimen/typeface_size_two"
+                />
+
+            <TextView
+                android:id="@+id/id_tv_pumpSet"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_gray_corner"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+               />
+
+            <TextView
+                style="@style/tv_padding_style_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密度:"
+                />
+
+            <TextView
+                android:id="@+id/id_tv_density"
+                style="@style/tv_padding_style_small"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_gray_corner"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+               />
+            <TextView
+                android:id="@+id/tv_pump_type"
+                style="@style/tv_padding_style_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="单向泵:"
+                />
+
+            <TextView
+                android:id="@+id/tv_pump_topbottom"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview"
+                android:background="@drawable/bg_white_gray_corner"
+                android:drawableRight="@drawable/ic_arrow_pull"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/private_center_padding">
+
+            <TextView
+                android:id="@+id/id_tv_correct"
+                style="@style/tv_padding_style_small"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="校正"
+                android:textColor="@color/white"
+               />
+
+            <TextView
+                android:id="@+id/id_tv_accuracy"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="精度验证"
+                android:textColor="@color/white"
+               />
+
+            <TextView
+                android:id="@+id/id_tv_computeDensity"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="计算密度"
+                android:textColor="@color/white"
+                 />
+
+
+
+            <TextView
+                android:id="@+id/id_tv_pause"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="暂停"
+                android:textColor="@color/white"
+               />
+
+            <TextView
+                android:id="@+id/id_tv_stop"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="终止"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear_left"
+            android:paddingLeft="@dimen/private_center_padding"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/id_tv_Del"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="删除数据"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/id_tv_autoDel"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+
+                android:background="@drawable/tv_blue_orange_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="自动删除"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/id_tv_weitiao"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="数据微调"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/id_tv_export"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="导出"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/id_tv_save"
+                style="@style/tv_padding_style_small"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_padding_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <com.bin.david.form.core.SmartTable
+            android:id="@+id/tb"
+            android:layout_width="1200dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_left1"
+            android:layout_alignRight="@+id/linear_left1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+          ></com.bin.david.form.core.SmartTable>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/tv_padding_style_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/method"
+                    />
+
+                <TextView
+                    android:id="@+id/id_tv_method"
+                    style="@style/tv_padding_style_small"
+                    android:layout_width="@dimen/item_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/textview"
+                    android:background="@drawable/bg_white_gray_corner"
+                    android:drawableRight="@drawable/ic_arrow_pull"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/id_tv_asc"
+                    style="@style/tv_padding_style"
+                    android:layout_width="@dimen/item_width_big"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/tv_blue_orange_selector"
+                    android:text="升序"
+                    android:textColor="@color/tab_text_white_green_selector"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/private_center_padding_big"
+                   />
+
+                <TextView
+                    android:id="@+id/id_tv_desc"
+                    style="@style/tv_padding_style"
+                    android:layout_width="@dimen/item_width_big"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/private_center_padding_big"
+                    android:background="@drawable/tv_blue_orange_selector"
+                    android:text="降序"
+                    android:textColor="@color/tab_text_white_green_selector"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_linear_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <CheckBox
+                android:id="@+id/id_checkbox_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/collection_checkbox_selector"
+                android:focusable="true"
+                android:scaleX="0.6"
+                android:scaleY="0.6"></CheckBox>
+
+            <TextView
+                android:id="@+id/id_tv_checkAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+
+                android:text="全选"
+                android:textSize="@dimen/typeface_size_two"></TextView>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tb2"
+            android:layout_width="480dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>

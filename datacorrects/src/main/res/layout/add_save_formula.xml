@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_white_gray_corner"
+        android:orientation="vertical">
+
+        <include layout="@layout/correct_pop_title"></include>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/private_center_margin_big"
+            android:orientation="horizontal"
+            android:padding="@dimen/private_center_padding">
+
+            <TextView
+                android:layout_width="@dimen/item_width"
+                android:layout_height="@dimen/title_bar_height"
+                android:gravity="center"
+                android:text="配方编码"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/typeface_size"></TextView>
+
+            <TextView
+                android:id="@+id/tv_formula_no"
+                style="@style/tv_dropdown_style"
+                android:layout_width="@dimen/item_width_big_big"
+                android:layout_height="@dimen/title_bar_height"
+                android:layout_toRightOf="@+id/textview"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/iv_add_formula_no"
+                android:layout_width="@dimen/title_bar_height"
+                android:layout_height="@dimen/title_bar_height"
+                android:layout_marginLeft="@dimen/private_center_margin"
+                android:src="@drawable/ic_add"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/private_center_padding_big"
+            android:layout_marginBottom="@dimen/private_center_padding_big"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray_gray_corner"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size" />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/private_center_margin_big"
+                android:background="@drawable/tv_blue_orange_selector"
+                android:text="@string/sure"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

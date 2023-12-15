@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/blue"
+        android:backgroundTintMode="src_over"
+        android:theme="@style/BaseTheme"
+        app:logo="@drawable/santint_logo"
+        app:title="参数设置"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/MenuTextStyle"
+        app:navigationIcon="@drawable/ic_arrow_left_white"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:theme="@style/ToolbarTheme"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.example.datacorrects.fragment.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"></FrameLayout>
+    </com.example.datacorrects.fragment.FragmentTabHost>
+
+</LinearLayout>

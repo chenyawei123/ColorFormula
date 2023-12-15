@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray_corner">
+    <LinearLayout
+        android:id="@+id/linear_dry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_type"
+        android:padding="@dimen/private_center_padding_big"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粉料通道"
+            android:textSize="@dimen/typeface_size"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_postion"
+            style="@style/tv_padding_style_small"
+            android:layout_width="@dimen/item_max_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/textview"
+            android:background="@drawable/bg_white_gray_corner"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/private_center_padding"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="干燥时间"
+            android:layout_marginLeft="@dimen/private_center_padding"
+            android:textSize="@dimen/typeface_size"></TextView>
+        <EditText
+            android:id="@+id/edit_dry_time"
+            android:layout_width="@dimen/item_width_small"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:background="@drawable/bg_white_gray_corner"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:inputType="number"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:textSize="@dimen/typeface_size"
+            android:text="s"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/private_center_margin_big"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/private_center_padding"
+        android:paddingRight="@dimen/private_center_padding">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_white_blue_selector"
+            android:text="左侧">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_white_blue_selector"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:text="右侧"></Button>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_manual_dry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手动干燥"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tv_blue_orange_selector"
+        android:layout_marginTop="@dimen/private_center_padding_big"
+        style="@style/tv_padding_style"
+        android:textColor="@color/white"
+        android:textSize="@dimen/typeface_size_big"
+        android:layout_marginBottom="@dimen/private_center_padding_big"
+        >
+
+    </TextView>
+
+</LinearLayout>

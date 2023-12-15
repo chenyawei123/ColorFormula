@@ -1,0 +1,8 @@
+include ':mypermission'
+include ':form'
+include ':datacorrects'
+include ':netrequest'
+include ':crash2'
+include ':commnlib'
+include ':app'
+rootProject.name = "ColorFormula"

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_white_corner"
+    android:orientation="vertical">
+
+    <include layout="@layout/correct_pop_title"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/private_center_padding"
+        android:paddingRight="@dimen/private_center_padding">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/private_center_margin">
+
+            <TextView
+                android:id="@+id/tv_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="料名称："
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_material_name"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_material"
+                android:layout_toRightOf="@+id/tv_material"
+                android:text=""
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_material"
+                android:layout_alignLeft="@+id/tv_material"
+                android:layout_marginTop="@dimen/private_center_margin_big"
+                android:text="最大量："
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_max_value"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_max"
+                android:layout_toRightOf="@+id/tv_max"
+                android:text=""
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_max"
+                android:layout_alignLeft="@+id/tv_max"
+                android:layout_marginTop="@dimen/private_center_margin_big"
+                android:text="当前量："
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_current_value"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_current"
+                android:layout_toRightOf="@+id/tv_current"
+                android:text=""
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_little_height"
+                android:layout_below="@+id/tv_current"
+                android:layout_alignLeft="@+id/tv_current"
+                android:layout_marginTop="@dimen/private_center_margin_big"
+                android:text="添加量"
+                android:gravity="center"
+                android:textSize="@dimen/typeface_size"></TextView>
+
+            <EditText
+                android:id="@+id/edit_add"
+                style="@style/myEditText"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="@dimen/item_little_height"
+                android:layout_alignTop="@+id/tv_add"
+                android:layout_alignBottom="@+id/tv_add"
+                android:layout_marginLeft="@dimen/private_center_margin"
+                android:layout_toRightOf="@+id/tv_add"
+                android:paddingLeft="5dp"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/typeface_size"></EditText>
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edit_add"
+                android:layout_marginLeft="@dimen/private_center_margin"
+                android:layout_toRightOf="@+id/edit_add"
+                android:text="L"
+                android:textSize="@dimen/typeface_size"></TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/private_center_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位置："
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_location_name"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_location"
+                android:layout_toRightOf="@+id/tv_location"
+                android:text=""
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_location"
+                android:layout_alignLeft="@+id/tv_location"
+                android:layout_marginTop="@dimen/private_center_margin_big"
+                android:text="最小量："
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_min_value"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_min"
+                android:layout_toRightOf="@+id/tv_min"
+                android:text="0"
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_min"
+                android:layout_alignLeft="@+id/tv_min"
+                android:layout_marginTop="@dimen/private_center_margin_big"
+                android:text="报警量："
+                android:textSize="@dimen/typeface_size" />
+
+            <TextView
+                android:id="@+id/tv_alarm_value"
+                android:layout_width="@dimen/item_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_alarm"
+                android:layout_toRightOf="@+id/tv_alarm"
+                android:text=""
+                android:textSize="@dimen/typeface_size" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/private_center_padding_big"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/private_center_padding">
+
+        <Button
+            android:id="@+id/btn_add_full"
+            style="@style/common_button_style"
+            android:text="添满"></Button>
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/common_button_style"
+            android:layout_marginLeft="@dimen/item_little_height"
+
+            android:text="确定"></Button>
+    </LinearLayout>
+
+</LinearLayout>

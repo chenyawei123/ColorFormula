@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_milk_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"></TextView>
+
+    <EditText
+        android:id="@+id/id_edit"
+        style="@style/myEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_milk_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_white_white_corner"
+        android:hint="请输入份数"
+        android:maxLength="2"
+        android:gravity="center"
+        android:textSize="26sp"></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/id_edit"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/gv_keybord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:horizontalSpacing="5px"
+            android:numColumns="3"
+            android:verticalSpacing="5px"></GridView>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/virtualKeyboardView"
+            android:orientation="vertical"
+            android:paddingBottom="10px">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_tv_zero"
+                    android:layout_width="@dimen/item_width_little"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_white_circle_corner"
+
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="26sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_del"
+                android:layout_width="@dimen/item_width_little"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_white_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5px">
+
+                <ImageView
+                    android:id="@+id/id_iv_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/keyboard_delete_img"></ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

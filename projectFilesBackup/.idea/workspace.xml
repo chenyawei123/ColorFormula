@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a1e039b-813f-47c6-a3bf-fbf4c21c0a47" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R4CBB20606100975]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TxlUUX7ctabhsJsDBQ7RxKzRmG" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewC:/Users/陈亚威/.gradle/wrapper/dists/gradle-6.3-all/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
+    <property name="android-custom-viewE:/minecreate/ColorFormula/form/src/main/java/com/bin/david/form/core/SmartTable.java_SELECTED" value="SmartTable" />
+    <property name="android.sdk.path" value="D:/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main" />
+    <property name="multi-representation-previewC:/Users/陈亚威/.gradle/wrapper/dists/gradle-6.3-all/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewE:/minecreate/ColorFormula/form/src/main/java/com/bin/david/form/core/SmartTable.java_selected" value="Custom views" />
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\minecreate\ColorFormula\app\src\main" />
+      <recent name="E:\minecreate\ColorFormula\app\src\main\res" />
+      <recent name="E:\minecreate\ColorFormula\app\src\main\res\values" />
+      <recent name="E:\minecreate\ColorFormula" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Native>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Java />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ColorFormula.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a1e039b-813f-47c6-a3bf-fbf4c21c0a47" name="Default Changelist" comment="" />
+      <created>1691992628768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691992628768</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1510" y="241" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1692004522604">
+      <screen x="-1920" y="56" width="1920" height="1080" />
+    </state>
+    <state x="-1510" y="241" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692004522604" />
+    <state x="-1202" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1692004376256">
+      <screen x="-1920" y="56" width="1920" height="1080" />
+    </state>
+    <state x="-1202" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692004376256" />
+    <state x="-1383" y="341" key="AndroidCreateResourceFileDialog" timestamp="1691998381599">
+      <screen x="-1920" y="56" width="1920" height="1080" />
+    </state>
+    <state x="-1383" y="341" key="AndroidCreateResourceFileDialog/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1691998381599" />
+    <state x="-1246" y="273" key="FileChooserDialogImpl" timestamp="1691992853722">
+      <screen x="-1920" y="56" width="1920" height="1080" />
+    </state>
+    <state x="-1246" y="273" key="FileChooserDialogImpl/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1691992853722" />
+    <state width="1226" height="73" key="GridCell.Tab.0.bottom" timestamp="1692016531808">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1865" height="125" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692005516844" />
+    <state width="1226" height="73" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1692016531808" />
+    <state width="1226" height="73" key="GridCell.Tab.0.center" timestamp="1692016531808">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1865" height="125" key="GridCell.Tab.0.center/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692005516844" />
+    <state width="1226" height="73" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1692016531808" />
+    <state width="1226" height="73" key="GridCell.Tab.0.left" timestamp="1692016531808">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1865" height="125" key="GridCell.Tab.0.left/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692005516844" />
+    <state width="1226" height="73" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1692016531808" />
+    <state width="1226" height="73" key="GridCell.Tab.0.right" timestamp="1692016531808">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1865" height="125" key="GridCell.Tab.0.right/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692005516844" />
+    <state width="1226" height="73" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1692016531808" />
+    <state x="-1591" y="153" key="SettingsEditor" timestamp="1692004504568">
+      <screen x="-1920" y="56" width="1920" height="1080" />
+    </state>
+    <state x="-1591" y="153" key="SettingsEditor/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692004504568" />
+    <state x="-1473" y="266" width="975" height="668" key="find.popup" timestamp="1692002415338">
+      <screen x="-1920" y="56" width="1920" height="1080" />
+    </state>
+    <state x="-1473" y="266" width="975" height="668" key="find.popup/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692002415338" />
+    <state x="-1388" y="274" key="run.anything.popup" timestamp="1692000000261">
+      <screen x="-1920" y="56" width="1920" height="1080" />
+    </state>
+    <state x="-1388" y="274" key="run.anything.popup/0.0.1280.720/-1920.56.1920.1080@-1920.56.1920.1080" timestamp="1692000000261" />
+  </component>
+</project>

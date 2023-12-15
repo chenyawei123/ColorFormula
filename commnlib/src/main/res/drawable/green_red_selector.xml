@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下时显示颜色 <item android:drawable="@drawable/bg_search_pressed" android:state_pressed="true"></item>-->
+    <!-- 被选中时显示颜色 -->
+    <item android:drawable="@drawable/ic_maintence_red" android:state_selected="true"></item>
+    <!-- 获取焦点时显示颜色 -->
+    <item android:drawable="@drawable/ic_maintence_red" android:state_focused="true"></item>
+
+    <!-- 正常时显示颜色 -->
+    <item android:drawable="@drawable/ic_maintence_green"></item>
+
+</selector>

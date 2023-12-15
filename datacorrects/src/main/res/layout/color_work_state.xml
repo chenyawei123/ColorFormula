@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/private_center_padding">
+    <!--  app:reachedColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        app:textColor="@android:color/holo_orange_dark"
+        app:unreachedColor="@color/colorAccent"
+                android:background="@color/colorPrimary"
+                 app:textColor="@android:color/holo_orange_dark"
+
+        -->
+    <com.cyw.mylibrary.util.ZProgressBar
+        android:id="@+id/zpb_color"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:padding="8dp"
+        android:progress="0"
+        app:reachedColor="@color/gray"
+        android:layout_gravity="center"
+        app:textColor="@android:color/holo_orange_dark"
+        app:unreachedColor="@color/black" />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+        <TextView
+            android:id="@+id/tv_barrel_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size"></TextView>
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:textSize="@dimen/typeface_size"></TextView>
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:textColor="@color/black"
+
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:textSize="@dimen/typeface_size"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

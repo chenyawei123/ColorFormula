@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/commonPadding">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@+id/cons2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="8dp">
+
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_little_height"
+                android:layout_marginTop="@dimen/private_center_padding"
+                android:background="@drawable/ic_background_params"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="点动参数设置"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/typeface_size_two"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_dd_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_add_chat">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_dd_edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/icon_edit_address">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_dd_del"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/icon_delete_address">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <com.bin.david.form.core.SmartTable
+                android:id="@+id/smartTable2"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="@dimen/private_center_padding"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear2"></com.bin.david.form.core.SmartTable>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_little_height"
+                android:layout_marginTop="@dimen/private_center_padding"
+                android:background="@drawable/ic_background_params"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/smartTable2"
+                app:layout_constraintTop_toBottomOf="@+id/smartTable2">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="默认参数设置"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/typeface_size_two"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_add2"
+                    android:visibility="gone">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/commonMargin"
+                    android:src="@drawable/icon_delete_address"
+                    android:visibility="gone">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_no"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="桶号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/edit_no"
+                app:layout_constraintTop_toBottomOf="@+id/linear3" />
+
+            <EditText
+                android:id="@+id/edit_no"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:inputType="number"
+                android:maxLength="5"
+                android:numeric="decimal"
+                android:paddingLeft="3dp"
+                android:text=""
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/tv_no"
+                app:layout_constraintRight_toLeftOf="@id/textViewName"
+                app:layout_constraintTop_toTopOf="@id/tv_no" />
+            <TextView
+                android:id="@+id/textViewName"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginLeft="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="物料名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/edit_no"
+                app:layout_constraintRight_toLeftOf="@+id/edit_material_name"
+                app:layout_constraintTop_toTopOf="@id/tv_no"/>
+
+            <EditText
+                android:id="@+id/edit_material_name"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:maxEms="16"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@id/textViewName"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_no" />
+
+
+            <TextView
+                android:id="@+id/tv_high"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="高速阈值"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_no"
+                app:layout_constraintRight_toRightOf="@+id/tv_no"
+                app:layout_constraintTop_toBottomOf="@id/tv_no"
+                />
+
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/drawable_edittext_high"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_blue_right_corner"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/tv_high"
+                app:layout_constraintRight_toRightOf="@id/edit_no"
+                app:layout_constraintTop_toTopOf="@id/tv_high"
+                />
+
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="中速阈值"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@id/textViewName"
+                app:layout_constraintRight_toRightOf="@id/textViewName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName"
+                />
+            <!--            app:layout_constraintHorizontal_weight="1"-->
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/drawable_edittext_low"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_blue_right_corner"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/textView12"
+                app:layout_constraintRight_toRightOf="@id/edit_material_name"
+                app:layout_constraintTop_toTopOf="@id/textView12"
+                />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="低速阈值"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_high"
+                app:layout_constraintRight_toRightOf="@id/tv_high"
+                app:layout_constraintTop_toBottomOf="@id/tv_high"
+                />
+
+            <!--            app:layout_constraintHorizontal_weight="1"-->
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/drawable_edittext_close"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_blue_right_corner"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/textView13"
+                app:layout_constraintRight_toRightOf="@id/edit_no"
+                app:layout_constraintTop_toTopOf="@id/textView13"
+               />
+
+            <TextView
+                android:id="@+id/tv_precision"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="罐装精度"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@id/textView12"
+                app:layout_constraintRight_toRightOf="@id/textView12"
+                app:layout_constraintTop_toBottomOf="@id/textView12"
+                />
+            <!--            app:layout_constraintHorizontal_weight="1"-->
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/drawable_edittext_medi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_blue_right_corner"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/tv_precision"
+                app:layout_constraintRight_toRightOf="@id/edit_material_name"
+                app:layout_constraintTop_toTopOf="@id/tv_precision"
+                />
+
+            <TextView
+                android:id="@+id/tv_openbig"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="开大嘴"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@id/textView13"
+                app:layout_constraintRight_toRightOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView13"
+                />
+
+            <EditText
+                android:id="@+id/edit_openbig"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:maxEms="16"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/tv_openbig"
+                app:layout_constraintRight_toRightOf="@id/edit_no"
+                app:layout_constraintTop_toTopOf="@id/tv_openbig"
+                />
+            <TextView
+                android:id="@+id/tv_closebig"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="关大嘴"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@id/tv_precision"
+                app:layout_constraintRight_toRightOf="@id/tv_precision"
+                app:layout_constraintTop_toBottomOf="@id/tv_precision"
+                />
+
+            <EditText
+                android:id="@+id/edit_closebig"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:maxEms="16"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@id/tv_closebig"
+                app:layout_constraintRight_toRightOf="@id/edit_material_name"
+                app:layout_constraintTop_toTopOf="@id/tv_closebig"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_opensmall"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="开小嘴"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@id/tv_openbig"
+                app:layout_constraintRight_toRightOf="@id/tv_openbig"
+                app:layout_constraintTop_toBottomOf="@id/tv_openbig"
+                />
+
+            <EditText
+                android:id="@+id/edit_opensmall"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:maxEms="16"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/tv_opensmall"
+                app:layout_constraintRight_toRightOf="@id/edit_no"
+                app:layout_constraintTop_toTopOf="@id/tv_opensmall"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_closesmall"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="关小嘴"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@id/tv_closebig"
+                app:layout_constraintRight_toRightOf="@id/tv_closebig"
+                app:layout_constraintTop_toBottomOf="@id/tv_closebig"
+                />
+
+            <EditText
+                android:id="@+id/edit_closesmall"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:maxEms="16"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/tv_closesmall"
+                app:layout_constraintRight_toRightOf="@id/edit_material_name"
+                app:layout_constraintTop_toTopOf="@id/tv_closesmall"
+                />
+            <TextView
+                android:id="@+id/tv_ddcount"
+                style="@style/tv_padding_style_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/commonMargin"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:gravity="center_vertical"
+                android:text="抖动次数"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size_two"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_opensmall"
+                app:layout_constraintRight_toRightOf="@id/tv_opensmall"
+                app:layout_constraintTop_toBottomOf="@id/tv_opensmall"
+                />
+
+            <EditText
+                android:id="@+id/edit_dd_count"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:maxEms="16"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@+id/tv_ddcount"
+                app:layout_constraintRight_toRightOf="@id/edit_no"
+                app:layout_constraintTop_toTopOf="@id/tv_ddcount"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:background="@drawable/bg_white_blue_corner"
+            android:paddingLeft="@dimen/private_center_padding"
+            android:paddingRight="@dimen/private_center_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cons1"
+            app:layout_constraintTop_toTopOf="@+id/cons1">
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_little_height"
+                android:layout_marginTop="@dimen/private_center_padding"
+                android:background="@drawable/ic_background_params"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="桶列表"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/typeface_size_two"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+
+            <com.bin.david.form.core.SmartTable
+                android:id="@+id/smartTable3"
+                android:layout_width="wrap_content"
+                android:layout_height="600dp"
+                android:layout_marginTop="@dimen/private_center_padding"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear4">
+
+            </com.bin.david.form.core.SmartTable>
+            <!--            <Button-->
+            <!--                android:id="@+id/btn_save"-->
+            <!--                android:background="@drawable/tv_blue_orange_selector"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                android:layout_marginBottom="@dimen/private_center_margin_big"-->
+            <!--                app:layout_constraintRight_toRightOf="parent"-->
+            <!--                android:text="保存"></Button>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/common_button_style"
+            android:text="保存"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"></Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

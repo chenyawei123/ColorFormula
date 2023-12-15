@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AcutalQuantity>
+    <ControlCode>1</ControlCode>
+    <InnerColorCode>TEST</InnerColorCode>
+    <ColorantCode>V</ColorantCode>
+    <ActualQua>0.65</ActualQua>
+    <ColorantCode>K</ColorantCode>
+    <ActualQua>0.65</ActualQua>
+    <ColorantCode>L</ColorantCode>
+    <ActualQua>0.65</ActualQua>
+</AcutalQuantity>

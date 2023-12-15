@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="item_width_big">125dp</dimen>
+    <dimen name="item_width_big_big">140dp</dimen>
+    <dimen name="item_width">100dp</dimen>
+    <dimen name = "item_width_small">80dp</dimen>
+    <dimen name = "item_width_little">60dp</dimen>
+    <dimen name="item_max_height">80dp</dimen>
+    <dimen name="item_height">60dp</dimen>
+    <dimen name="item_little_height">40dp</dimen>
+    <dimen name="item_small_height">30dp</dimen>
+    <dimen name="menu_title_textsize">20sp</dimen>
+    <dimen name="activity_title">50dp</dimen>
+
+    <!-- 购物车 -->
+
+    <dimen name="activity_padding">5dp</dimen>
+    <dimen name="activity_lift_back_w_h">35dp</dimen>
+    <dimen name="activity_title_back">10dp</dimen>
+    <dimen name="activity_title_text_size">18sp</dimen>
+    <dimen name="activity_right_text_size">14sp</dimen>
+    <dimen name="typeface_size_big">20sp</dimen>
+    <dimen name="typeface_size">18sp</dimen>
+    <dimen name="typeface_size_one">17sp</dimen>
+    <dimen name="typeface_size_two">16sp</dimen>
+    <!-- 登录 -->
+    <!-- 个人中心 -->
+    <dimen name="private_center_padding_big">30dp</dimen>
+    <dimen name="private_center_padding">15dp</dimen>
+    <dimen name="private_center_margin_big">30dp</dimen>
+    <dimen name="private_center_margin">10dp</dimen>
+    <dimen name="private_center_marginlittle">5dp</dimen>
+    <dimen name="private_center_marginsmall">3dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="my_order_comment_add_pic">68dp</dimen>
+    <dimen name="item_emoticon_size_big">60dp</dimen>
+
+
+    <!--jpush-->
+    <!-- 全局使用的大小 -->
+    <dimen name="title_bar_height">48.5dp</dimen>
+
+    <!-- Login页面 -->
+
+    <!-- 文字的大小 -->
+    <dimen name="item_head_icon_size">40dp</dimen>
+
+    <dimen name="indicator_margin">10dp</dimen>
+
+    <dimen name="bar_height">32dp</dimen>
+    <dimen name="bar_tool_btn_width">56dp</dimen>
+    <dimen name="verticalspit_view_width">0.6dp</dimen>
+    <dimen name="horizontalspit_view_height">0.6dp</dimen>
+    <dimen name="item_emoticon_size_default">32dp</dimen>
+
+
+</resources>

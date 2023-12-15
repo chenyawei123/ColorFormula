@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DataCorrects</string>
+    <string name="maintenance">物料维护</string>
+    <string name="correct">校正</string>
+    <string name="correctmethod">校正方案</string>
+    <string name="pumpconfig">物料信息</string>
+    <string name="pumpset">泵设置</string>
+    <string name="correctparam">参数设置</string>
+    <string name="systemset">系统设置</string>
+    <string name="manualoperation">手动配料</string>
+    <string name="editformula">编辑配方</string>
+    <!-- 校正-->
+    <string name="position">位置:</string>
+    <string name="method">方案:</string>
+    <string name="Santint">三华科技</string>
+    <string name="sure">确定</string>
+    <string name="add">添加</string>
+    <string name="cancel">取消</string>
+
+</resources>

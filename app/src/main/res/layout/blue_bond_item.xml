@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/private_center_padding_big"
+    android:paddingRight="@dimen/private_center_padding_big"
+    android:background="@drawable/ic_single_bottom_line_white_bg">
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/id_tv_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/typeface_size"
+        />
+    <TextView
+        android:id="@+id/id_tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/typeface_size"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_tv_destory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="销毁"
+        android:layout_alignParentRight="true"
+
+        android:textColor="@color/all_green"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/typeface_size"
+        android:gravity="center"/>
+
+</RelativeLayout>

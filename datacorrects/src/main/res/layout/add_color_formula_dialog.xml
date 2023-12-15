@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_gray_corner"
+            android:orientation="vertical">
+
+            <include layout="@layout/correct_pop_title"></include>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/private_center_padding">
+
+                <TextView
+                    android:layout_width="@dimen/item_width"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:text="配方编码"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/typeface_size"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_formula_no"
+                    android:layout_width="350dp"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_toRightOf="@+id/textview"
+                    android:background="@drawable/bg_white_gray_corner"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/typeface_size_one" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/private_center_padding">
+
+                <TextView
+                    android:layout_width="@dimen/item_width"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:text="配方名称"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/typeface_size"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_formula_name"
+                    android:layout_width="350dp"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_toRightOf="@+id/textview"
+                    android:background="@drawable/bg_white_gray_corner"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/typeface_size_one" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/private_center_padding">
+
+                <TextView
+                    android:layout_width="@dimen/item_width"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:text="颜色"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/typeface_size"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_color"
+                    android:layout_width="350dp"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_toRightOf="@+id/textview"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/typeface_size_one" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/private_center_padding">
+
+                <TextView
+                    android:id="@+id/tv_red"
+                    android:layout_width="@dimen/item_width"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:text="R"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/typeface_size"></TextView>
+
+                <com.cyw.mylibrary.util.ZProgressBar
+                    android:id="@+id/zpb_red"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:progress="0"
+                    app:reachedColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    app:textColor="@android:color/holo_orange_dark"
+                    app:unreachedColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/iv_add_red"
+                    android:layout_width="@dimen/title_bar_height"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/ic_add"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_minus_red"
+                    android:layout_width="@dimen/title_bar_height"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/iv_minus"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/private_center_padding">
+
+                <TextView
+                    android:id="@+id/tv_green"
+                    android:layout_width="@dimen/item_width"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:text="G"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/typeface_size"></TextView>
+
+                <com.cyw.mylibrary.util.ZProgressBar
+                    android:id="@+id/zpb_green"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:progress="0"
+                    app:reachedColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    app:textColor="@android:color/holo_orange_dark"
+                    app:unreachedColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/iv_add_green"
+                    android:layout_width="@dimen/title_bar_height"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/ic_add"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_minus_green"
+                    android:layout_width="@dimen/title_bar_height"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/iv_minus"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/private_center_padding">
+
+                <TextView
+                    android:id="@+id/tv_blue"
+                    android:layout_width="@dimen/item_width"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:text="B"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/typeface_size"></TextView>
+
+                <com.cyw.mylibrary.util.ZProgressBar
+                    android:id="@+id/zpb_blue"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+
+                    android:padding="8dp"
+                    android:progress="0"
+                    app:reachedColor="@color/colorPrimary"
+                    app:textColor="@android:color/holo_orange_dark"
+                    app:unreachedColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/iv_add_blue"
+                    android:layout_width="@dimen/title_bar_height"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/ic_add"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_minus_blue"
+                    android:layout_width="@dimen/title_bar_height"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:src="@drawable/iv_minus"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/private_center_padding_big"
+                android:layout_marginBottom="@dimen/private_center_padding_big"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_gray_gray_corner"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/typeface_size" />
+
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/private_center_margin_big"
+                    android:background="@drawable/tv_blue_orange_selector"
+                    android:text="@string/sure"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/typeface_size"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

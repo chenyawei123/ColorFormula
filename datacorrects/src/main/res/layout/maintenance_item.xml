@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/private_center_padding"
+    android:paddingTop="@dimen/private_center_padding"
+    >
+
+    <TextView
+        android:id="@+id/id_tv_type"
+        android:layout_width="@dimen/item_width_little"
+        android:layout_height="wrap_content"
+        android:text="料酒"
+        android:textSize="@dimen/typeface_size"
+        android:gravity="center"
+       />
+
+    <RelativeLayout
+        android:id="@+id/id_rel"
+        android:layout_width="@dimen/item_width_little"
+        android:layout_height="200dp"
+        android:layout_below="@+id/id_tv_type"
+        android:background="@drawable/green_red_selector">
+
+        <TextView
+            android:id="@+id/id_progressbar"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/all_green" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_max_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_rel"
+        android:layout_toRightOf="@+id/id_rel"
+        android:text="-1200"
+        android:textSize="@dimen/typeface_size"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/id_tv_main_id"
+        android:layout_width="@dimen/item_width_little"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_rel"
+        android:textSize="@dimen/typeface_size"
+        android:gravity="center"
+        android:text="1号" />
+
+</RelativeLayout>

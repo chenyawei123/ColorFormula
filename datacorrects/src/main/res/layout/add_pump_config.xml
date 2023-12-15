@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_white_corner"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/private_center_padding">
+
+        <include layout="@layout/correct_pop_title"></include>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/private_center_padding"
+            android:paddingRight="@dimen/private_center_padding"
+            android:paddingBottom="@dimen/private_center_padding">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/private_center_padding">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+
+                        android:text="位置："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/id_edit_position"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="高速速度："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_highspeed"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="低速速度："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_lowspeed"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:text="启动速度："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_startspeed"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearCapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="桶容量："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_capacity"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearMulti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="稀释倍数："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_multi"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+
+                android:paddingLeft="@dimen/private_center_padding">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/linearlayout1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="料名称："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/id_edit_name"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:maxLength="6"
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:layout_toRightOf="@+id/linearlayout5"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text="中速速度："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_midspeed"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:layout_toRightOf="@+id/linearlayout7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="点动速度："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_ddspeed"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_aerationtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_below="@+id/linear_normaltime"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_aerationtime"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="启动步数："
+                        android:textSize="@dimen/typeface_size_one">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/edit_startstep"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one"></EditText>
+
+                    <TextView
+                        android:id="@+id/tv_aerationtime_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+
+                        android:gravity="center"
+                        android:text="步"
+                        android:textSize="@dimen/typeface_size_two"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearpolice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_little_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/private_center_margin"
+                    android:layout_toRightOf="@+id/linearlayout5"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text="报警量："
+                        android:textSize="@dimen/typeface_size_one" />
+
+                    <EditText
+                        android:id="@+id/edit_police"
+                        android:layout_width="@dimen/item_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray_corner"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxEms="6"
+                        android:maxLength="6"
+                        android:text=""
+                        android:textSize="@dimen/typeface_size_one" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/private_center_padding_big"
+            android:layout_marginBottom="@dimen/private_center_padding_big"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/common_button_style"
+                android:background="@drawable/bg_gray_gray_corner"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/common_button_style"
+                android:layout_marginLeft="@dimen/private_center_margin_big"
+                android:text="@string/sure"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

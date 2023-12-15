@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_white_corner"
+    >
+   <include layout="@layout/correct_pop_title"></include>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/private_center_padding_big"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方案名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size_big"/>
+        <EditText
+            android:id="@+id/id_edit_method"
+            android:layout_width="160dp"
+            android:layout_height="@dimen/item_little_height"
+            android:background="@drawable/bg_white_gray_corner"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:maxLength="8"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/private_center_padding_big"
+        android:layout_marginBottom="@dimen/private_center_padding_big">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:background="@drawable/bg_gray_gray_corner"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"
+            />
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"
+
+           />
+
+    </LinearLayout>
+
+</LinearLayout>

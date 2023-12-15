@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 校正方案-->
+    <string name="add_correct_point">添加校正点</string>
+    <string name="add_method">添加方案</string>
+    <string name="del_method">删除方案</string>
+    <!--校正参数 -->
+    <string name="correct_params_config">校正参数配置</string>
+    <string name="correct_config">校正配置</string>
+    <string name="shelling">去皮</string>
+</resources>

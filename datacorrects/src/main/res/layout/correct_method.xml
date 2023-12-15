@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/private_center_padding"
+    android:paddingRight="@dimen/private_center_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="方案名称:"
+            android:textSize="@dimen/typeface_size_two" />
+
+        <TextView
+            android:id="@+id/id_tv_method"
+            android:layout_width="@dimen/item_width_big"
+            style="@style/tv_dropdown_style"
+            android:layout_height="@dimen/item_little_height"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textview"
+            />
+        <TextView
+            android:id="@+id/tv_add_correct_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:textColor="@color/white"
+            android:text="@string/add_correct_point"
+            android:layout_toRightOf="@+id/id_tv_method"
+            android:padding="@dimen/private_center_margin"
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:textSize="@dimen/typeface_size"></TextView>
+        <TextView
+            android:id="@+id/id_tv_add_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/id_tv_del_method"
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:layout_toRightOf="@+id/tv_add_correct_point"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="@string/add_method"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"
+            android:padding="@dimen/private_center_margin"/>
+
+        <TextView
+            android:id="@+id/id_tv_del_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textview"
+            android:layout_toRightOf="@+id/id_tv_add_method"
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="@string/del_method"
+            android:textColor="@color/white"
+            android:padding="@dimen/private_center_margin"
+            android:textSize="@dimen/typeface_size" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/private_center_margin_big"
+        android:layout_marginLeft="@dimen/private_center_padding_big"
+        android:layout_marginRight="@dimen/private_center_padding_big"
+        android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

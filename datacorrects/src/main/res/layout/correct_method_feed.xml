@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_white_corner"
+    android:orientation="vertical">
+
+    <include layout="@layout/correct_pop_title"></include>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/private_center_padding_big"
+        android:paddingLeft="@dimen/private_center_padding"
+        android:paddingRight="@dimen/private_center_padding">
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="校正点："
+            android:textSize="@dimen/typeface_size" />
+
+        <EditText
+            android:id="@+id/id_edit_correct"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_little_height"
+            android:layout_alignBaseline="@id/tv_point"
+            android:layout_toRightOf="@+id/tv_point"
+            android:background="@drawable/bg_white_gray_corner"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:numeric="decimal"
+            android:text=""
+            android:textSize="@dimen/typeface_size" />
+
+        <TextView
+            android:id="@+id/tv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:layout_toRightOf="@+id/id_edit_correct"
+            android:text="重复次数："
+            android:textSize="@dimen/typeface_size" />
+
+        <EditText
+            android:id="@+id/id_edit_repeat"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_little_height"
+            android:layout_alignBaseline="@id/tv_repeat"
+            android:layout_toRightOf="@+id/tv_repeat"
+            android:background="@drawable/bg_white_gray_corner"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text=""
+            android:textSize="@dimen/typeface_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/private_center_padding_big"
+        android:paddingLeft="@dimen/private_center_padding"
+        android:paddingRight="@dimen/private_center_padding">
+
+        <TextView
+            android:id="@+id/tv_offset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="偏移值："
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/typeface_size" />
+
+        <EditText
+            android:id="@+id/id_edit_offset"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_little_height"
+            android:layout_toRightOf="@+id/tv_offset"
+            android:background="@drawable/bg_white_gray_corner"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:numeric="decimal"
+            android:text=""
+            android:textSize="@dimen/typeface_size" />
+
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/id_edit_offset"
+            android:text="变化量："
+            android:textSize="@dimen/typeface_size" />
+
+        <EditText
+            android:id="@+id/id_edit_change"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="@dimen/item_little_height"
+            android:layout_toRightOf="@+id/tv_change"
+            android:background="@drawable/bg_white_gray_corner"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:numeric="decimal"
+            android:text=""
+            android:textSize="@dimen/typeface_size" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/private_center_padding_big"
+        android:layout_marginBottom="@dimen/private_center_padding_big"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_cancel_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_padding_big"
+            android:layout_toRightOf="@+id/btn_cancel_point"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size" />
+
+
+    </RelativeLayout>
+</LinearLayout>

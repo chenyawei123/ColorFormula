@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_single_bottom_line_white_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/private_center_padding_big"
+    android:paddingRight="@dimen/private_center_padding_big"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/typeface_size"/>
+
+        <TextView
+            android:id="@+id/id_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/typeface_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_tv_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="连接"
+        android:textColor="@color/all_green"
+        android:textSize="@dimen/typeface_size"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

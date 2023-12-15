@@ -1,0 +1,40 @@
+ext.deps=[:]
+def versions = [:]
+versions.lifecycle_viewmodel = "2.2.0"
+versions.lifecycle_livedata = "2.2.0"
+versions.appcompat = "1.1.0"
+versions.material = "1.1.0"
+versions.constraintlayout = "1.1.3"
+versions.recyclerview = "1.1.0"
+versions.zhyokhttp = "3.3.1"
+versions.androidsocketclient = "1.4.1"
+versions.autosize = "1.2.1"
+versions.multidex = "2.0.1"
+
+
+
+
+def deps=[:]
+deps.viewmodel = "androidx.lifecycle:lifecycle-viewmodel:$versions.lifecycle_viewmodel"
+deps.livedata = "androidx.lifecycle:lifecycle-livedata:$versions.lifecycle_livedata"
+deps.appcompat = "androidx.appcompat:appcompat:$versions.appcompat"
+deps.constraintlayout = "androidx.constraintlayout:constraintlayout:$versions.constraintlayout"
+deps.material = "com.google.android.material:material:$versions.material"
+deps.recyclerview = "androidx.recyclerview:recyclerview:$versions.recyclerview"
+deps.androidsocketclient = "com.github.vilyever:AndroidSocketClient:$versions.androidsocketclient"
+deps.zhyokhttp = "com.squareup.okhttp3:okhttp:$versions.zhyokhttp"
+deps.autosize = "me.jessyan:autosize:$versions.autosize"
+deps.multidex = "androidx.multidex:multidex:$versions.multidex"
+ext.deps = deps
+
+def build_versions = [:]
+build_versions.min_sdk = 19
+build_versions.target_sdk = 30
+build_versions.compile_sdk = 30
+build_versions.build_tools = "30.0.3"
+ext.build_versions = build_versions
+
+def apk_versions = [:]
+apk_versions.versionCode = 1
+apk_versions.versionName = "1.0"
+ext.apk_versions = apk_versions

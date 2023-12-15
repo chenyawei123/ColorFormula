@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/private_center_padding">
+r
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校正参数配置"
+        android:textColor="@color/black"
+        android:textSize="@dimen/typeface_size_big"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/private_center_padding"
+        android:background="@drawable/ic_background_params"
+        android:text="校正配置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/typeface_size"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue"></View>
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/private_center_margin">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="去皮"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size"></TextView>
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv1"
+
+            android:layout_alignLeft="@+id/drawable_edittext"
+            android:button="@drawable/params_checkbox_selector"
+            android:scaleX="0.9"
+
+            android:scaleY="0.9"></CheckBox>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:paddingTop="@dimen/private_center_margin"
+            android:paddingBottom="@dimen/private_center_margin"
+            android:text="罐装量"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size_big"></TextView>
+
+        <com.example.datacorrects.customView.DrawableEditText
+            android:id="@+id/drawable_edittext"
+            android:layout_width="@dimen/item_width_big"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv2"
+            android:layout_alignBottom="@id/tv2"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:layout_toRightOf="@+id/tv2"
+
+            >
+
+        </com.example.datacorrects.customView.DrawableEditText>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="@dimen/private_center_padding_big"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/drawable_edittext"
+            android:paddingTop="@dimen/private_center_margin"
+            android:paddingBottom="@dimen/private_center_margin"
+            android:text="最大称量"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size_big"></TextView>
+
+        <com.example.datacorrects.customView.DrawableEditText
+            android:id="@+id/drawable_edittext_weight"
+            android:layout_width="@dimen/item_width_big"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv3"
+            android:layout_alignBottom="@id/tv3"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:layout_toRightOf="@+id/tv3"
+
+            >
+
+        </com.example.datacorrects.customView.DrawableEditText>
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv5"
+            android:layout_alignParentTop="true"
+            android:text="预注出"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size"></TextView>
+
+        <CheckBox
+            android:id="@+id/check_box_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv1"
+            android:layout_alignLeft="@+id/drawable_edittext_pre"
+            android:button="@drawable/params_checkbox_selector"
+            android:scaleX="0.9"
+            android:scaleY="0.9"></CheckBox>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_marginLeft="@dimen/private_center_padding_big"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/drawable_edittext_weight"
+            android:paddingTop="@dimen/private_center_margin"
+            android:paddingBottom="@dimen/private_center_margin"
+            android:text="预注出量"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size_big"></TextView>
+
+        <com.example.datacorrects.customView.DrawableEditText
+            android:id="@+id/drawable_edittext_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv5"
+            android:layout_alignBottom="@id/tv5"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:layout_toRightOf="@+id/tv5"
+
+            >
+
+        </com.example.datacorrects.customView.DrawableEditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/private_center_padding"
+        android:background="@drawable/ic_background_params"
+        android:text="电子秤设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/typeface_size"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue"></View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/private_center_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_padding_style_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:text="电子秤型号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size" />
+
+        <TextView
+            android:id="@+id/tv_scale_type"
+            style="@style/tv_padding_style_small"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/textview"
+            android:background="@drawable/bg_white_gray_corner"
+            android:drawableRight="@drawable/ic_arrow_pull"
+            android:gravity="center"
+            android:text="Mettler_Tolodo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/private_center_padding"
+        android:background="@drawable/ic_background_params"
+        android:text="电子秤测试"
+        android:textColor="@color/white"
+        android:textSize="@dimen/typeface_size"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue"></View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/private_center_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_clear_zero"
+            style="@style/tv_padding_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="清零"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"></TextView>
+
+        <TextView
+            android:id="@+id/tv_weight"
+            style="@style/tv_padding_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="称重"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"></TextView>
+
+        <com.example.datacorrects.customView.EdittextWithRightText
+            android:id="@+id/edit_weight"
+            style="@style/tv_padding_style"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_margin"
+            android:background="@drawable/bg_white_gray_corner"
+            android:textSize="@dimen/typeface_size"></com.example.datacorrects.customView.EdittextWithRightText>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/private_center_padding"
+        android:background="@drawable/ic_background_params"
+        android:text="单双头设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/typeface_size"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue"></View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/private_center_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_padding_style_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:text="选择"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size" />
+
+        <TextView
+            android:id="@+id/tv_tou_type"
+            style="@style/tv_padding_style_small"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/textview"
+            android:background="@drawable/bg_white_gray_corner"
+            android:drawableRight="@drawable/ic_arrow_pull"
+            android:gravity="center"
+            android:text="单头"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typeface_size" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/private_center_padding_big">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"></Button>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_little_height"
+            android:layout_toRightOf="@id/btn_back"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"></Button>
+    </RelativeLayout>
+
+</LinearLayout>

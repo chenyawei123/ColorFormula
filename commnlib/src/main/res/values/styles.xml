@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- android:windowFrame  是否有边框    android:backgroundDimEnabled 是否变暗
+    android:windowContentOverlay   是否有闪屏页（APP启动那一瞬间出现的界面）
+    android:windowIsTranslucent  是否半透明-->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateVisible|adjustPan</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!-- dialog style windowIsTranslucent false不透明  true  半透明 -->
+    <style name="ios_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/ios_dialog_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_soft_input" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowSoftInputMode">stateVisible|adjustPan</item>
+    </style>
+    <style name="tv_padding_style">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">@dimen/typeface_size_two</item>
+
+    </style>
+    <style name="tv_padding_style_small">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">@dimen/typeface_size_two</item>
+
+    </style>
+
+    <style name="MXP_theme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    <!--Toolbar主题的设置-->
+    <style name="BaseTheme" parent="AppTheme1">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:textColorSecondary">#ffffff</item>-->
+        <!--Toolbar的主题设置-->
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
+    <!--小汉堡颜色为白色-->
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="MenuTextStyle" parent="OverflowMenuStyle">
+        <item name="android:textSize">25sp</item>
+    </style>
+    <style name="OverflowMenuStyle"  parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">0dp</item>
+        <!-- 弹出层背景颜色       <item name="android:popupBackground">@drawable/ic_menu_bg</item> -->
+        <!--<item name="android:background">@drawable/ic_menu_bg</item>-->
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:popupBackground">@color/colorPrimaryDark</item>
+        <item name="android:dropDownVerticalOffset">7dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">#0099CC</item>
+        <!--Menu item 高度 这里不需要指定style 可直接指定-->
+        <item name="android:listPreferredItemHeightSmall">80dp</item>
+        <!--<item name="android:dropDownListViewStyle">@style/AppDropDownListViewStyle</item>-->
+    </style>
+    <!--navigationIcon和Title的距离问题-->
+    <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">40dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">25sp</item>
+    </style>
+    <!--下拉样式 -->
+    <style name="tv_dropdown_style">
+        <item name="android:textSize">@dimen/typeface_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_pull</item>
+        <item name="background">@drawable/bg_white_gray_corner</item>
+    </style>
+    <attr name="reachedColor" format="color" />
+    <attr name="unreachedColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="textColor" format="color" />
+    <attr name="isShowText" format="boolean" />
+
+    <declare-styleable name="SimpleProgressbar">
+        <attr name="reachedColor" />
+        <attr name="unreachedColor" />
+    </declare-styleable>
+    <declare-styleable name="ZProgressbar">
+        <attr name="reachedColor" />
+        <attr name="unreachedColor" />
+        <attr name="textSize" />
+        <attr name="textColor" />
+        <attr name="isShowText" />
+    </declare-styleable>
+    <!-- 统一按钮样式
+  <item name="android:background">@drawable/bt_bottom_bg_selected</item>-->
+    <style name="common_button_style">
+        <item name="android:layout_width">@dimen/item_width_big</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/tv_blue_orange_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/typeface_size</item>
+    </style>
+    <style name="myEditText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/line_color</item>
+        <item name="android:background">@drawable/bg_white_gray_corner</item>
+        <item name="android:textSize">@dimen/typeface_size</item>
+    </style>
+</resources>

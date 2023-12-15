@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_white_corner"
+    android:orientation="vertical">
+
+    <include layout="@layout/correct_pop_title"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/private_center_padding_big"
+        android:paddingTop="@dimen/private_center_padding"
+        android:paddingRight="@dimen/private_center_padding_big">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_white_blue_corner"
+            >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:gravity="center_vertical|left"
+                android:text="桶号"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/typeface_size" />
+
+            <EditText
+                android:id="@+id/edit_dd_no"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:paddingLeft="5dp"
+                android:maxLength="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_white_blue_corner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:gravity="center_vertical|left"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:textColor="@color/white"
+                android:text="点动目标量"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/typeface_size" />
+
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/edit_dd_target"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:gravity="center"
+                android:maxLength="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_shakestep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_white_blue_corner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:gravity="center_vertical|left"
+                android:text="振动步数"
+                android:paddingLeft="5dp"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size" />
+
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/edit_dd_step"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:gravity="center"
+                android:maxLength="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_white_blue_corner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:gravity="center_vertical|left"
+                android:text="点动周期"
+                android:paddingLeft="5dp"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size" />
+
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/edit_dd_interval"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:gravity="center"
+                android:maxLength="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_white_blue_corner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:gravity="center_vertical|left"
+                android:text="点动前步数"
+                android:paddingLeft="5dp"
+                android:background="@drawable/bg_blue_blue_left_corner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typeface_size" />
+
+            <com.example.datacorrects.customView.DrawableEditText
+                android:id="@+id/edit_dd_before_step"
+                android:layout_width="160dp"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="@drawable/bg_white_blue_right_corner"
+                android:gravity="center"
+                android:maxLength="8" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="@dimen/private_center_padding"
+        android:layout_marginBottom="@dimen/private_center_padding"
+        android:paddingRight="@dimen/private_center_padding_big"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/item_width_big"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_gray_corner"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/common_button_style"
+            android:layout_width="@dimen/item_width_big"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:text="@string/sure"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLORFORMULA>
+    <FORMULA>
+        <VERSION>2017-12-1</VERSION>
+        <BRAND>品牌</BRAND>
+        <PRODUCT>产品</PRODUCT>
+        <MANUFACTURER>制造商</MANUFACTURER>
+        <DESCRIPTION>颜色描述 </DESCRIPTION>
+        <INNERCOLORCODE>内部色号 </INNERCOLORCODE>
+        <COLORGROUP>颜色分组 </COLORGROUP>
+        <STANDARDCOLOR>标准色号 </STANDARDCOLOR>
+        <VARIANTCODE>差异色</VARIANTCODE>
+        <BARRELS>1(桶)</BARRELS>
+        <UNIT>g(罐单位)</UNIT>
+    </FORMULA>
+    <FORMULAITEMS>
+        <FORMULAITEM>
+            <COLORANT>B</COLORANT>
+            <AMOUNT>43.2</AMOUNT>
+        </FORMULAITEM>
+        <FORMULAITEM>
+            <COLORANT>C</COLORANT>
+            <AMOUNT>4.4</AMOUNT>
+        </FORMULAITEM>
+        <FORMULAITEM>
+            <COLORANT>D</COLORANT>
+            <AMOUNT>2.2</AMOUNT>
+        </FORMULAITEM>
+        <FORMULAITEM>
+            <COLORANT>E</COLORANT>
+            <AMOUNT>0.08</AMOUNT>
+        </FORMULAITEM>
+    </FORMULAITEMS>
+</COLORFORMULA>

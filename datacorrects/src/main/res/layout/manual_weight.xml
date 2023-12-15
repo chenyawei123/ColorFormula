@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray_corner"
+    android:paddingLeft="@dimen/private_center_padding"
+    android:paddingRight="@dimen/private_center_padding"
+    android:paddingBottom="@dimen/private_center_padding"
+    android:paddingTop="@dimen/private_center_padding"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请手动执行电子秤清零操作"
+        android:textSize="@dimen/typeface_size_big"
+        android:textColor="@color/black"></TextView>
+    <EditText
+        android:id="@+id/edit_manual_weight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_little_height"
+        android:hint="请输入称重值："
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:background="@drawable/bg_white_gray_corner"
+        android:layout_marginTop="@dimen/private_center_margin_big"
+        ></EditText>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/item_little_height"
+        android:layout_marginBottom="@dimen/private_center_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/private_center_margin_big"
+            android:background="@drawable/tv_blue_orange_selector"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typeface_size"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

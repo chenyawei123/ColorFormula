@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="layout_color">#F0F0F0</color>
+    <color name="typeface_gray_color">#909090</color>
+    <color name="typeface_gray_color2">#646464</color>
+    <color name="all_green">#2cb5a5</color>
+    <color name="line_color">#E1E1E1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pressed_color">#63A000</color>
+    <color name="transparent">#60000000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#a0a0a0</color>
+    <color name="green">#6DB030</color>
+    <color name="orange">#FF6600</color>
+    <color name="blue">#359CA3</color>
+    <!-- 购物车 -->
+    <color name="yellow_fooddetail_cart_add">#ff9900</color>
+    <!-- 购物车 -->
+    <color name="activity_title_text_color">#595757</color>
+    <color name="activity_right_text_color">#000000</color>
+    <color name="text_color_three">#868686</color>
+    <!-- 支付密码框 -->
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!--<color name="color999999">#999999</color>-->
+    <!-- 添加银行卡验证 -->
+    <color name="gray_black">#BBBBBB</color>
+    <color name="deep_gray">#E5E5E5</color>
+    <!-- 管理收货地址 -->
+    <color name="black_1">#323232</color>
+    <!-- 个人资料 -->
+    <color name="line">#dddddd</color>
+    <!-- 个人中心 -->
+    <color name="light_green">#0CC7B6</color>
+    <color name="activity_contacts_bg">#F8F8F8</color>
+
+    <color name="material_red">#ffF44336</color>
+    <color name="material_green">#ff4CAF50</color>
+    <color name="material_blue">#ff03A9F4</color>
+    <color name="material_yellow">#ffFFEB3B</color>
+    <!-- 选桌 -->
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <!-- QRCode scanner color end -->
+
+
+    <!--jpush-->
+    <color name="jmui_jpush_blue">#2DD0CF</color>
+    <color name="menu_item_back_pres_color">#2DD0CF</color>
+    <color name="chat_text_color">#0B1816</color>
+    <color name="red">#FC2828</color>
+    <color name="toolbar_btn_select">#D9D9D9</color>
+    <color name="toolbar_btn_nomal">@color/white</color>
+    <color name="toolbar_spilt_line">#CDCDCD</color>
+    <color name="btn_send_textcolor">@color/white</color>
+    <color name="color_grey_999999">#999999</color>
+
+    <color name="color_black_333333">#333333</color>
+    <color name="color_split_line_d9d9d9">#d9d9d9</color>
+    <color name="spilt_line">#CFCFCF</color>
+
+    <color name="message_already_receipt">#999999</color>
+    <color name="message_no_receipt">#2DD0CF</color>
+
+
+    <color name="blue_btn_cannot_pressed">#6CDEDD</color>
+    <color name="blue_btn_normal">#2DD0CF</color>
+    <color name="blue_btn_pressed">#02BDBC</color>
+
+    <color name="blue_btn_text_70">#E0F8F8</color>
+    <color name="blue_btn_text_press">#99E4E4</color>
+    <!--BaiduMap-->
+
+    <color name="gray61">#9C9C9C</color>
+    <color name="gray71">#B5B5B5</color>
+    <color name="gray81">#CFCFCF</color>
+    <!--点击背景-->
+    <color name="press_background_color">#EEEEEE</color>
+    <!--分隔线颜色-->
+    <color name="divider_color">#D5D5D5</color>
+    <!--标题颜色-->
+    <color name="title_color">#262727</color>
+    <color name="transparent_background">#80ffffff</color>
+    <color name="main_head_color">#FCFCFC</color>
+    <color name="colorOdd">#0E2F50</color>
+    <color name="colorEven">#0F3356</color>
+    <!---milk-->
+    <color name="milk_home_buzhou_bg">#E6E6E6</color>
+</resources>

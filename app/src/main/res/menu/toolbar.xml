@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/action_correct"-->
+<!--        android:icon="@drawable/nav_selector"-->
+<!--        android:title="参数配置"-->
+<!--        app:showAsAction="never"-->
+<!--        android:textSize="24sp"-->
+<!--        />-->
+
+<!--    &lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+<!--    <item-->
+<!--        android:id="@+id/action_formula"-->
+<!--        android:icon="@drawable/ic_baseline_settings_64"-->
+<!--        android:title="@string/formula"-->
+<!--        app:showAsAction="never"-->
+<!--        android:textSize="24sp"/>-->
+    <item
+        android:id="@+id/action_manual"
+        android:title="@string/manualoperation"
+        app:showAsAction="always"
+        android:textSize="24sp"/>
+<!--    <item-->
+<!--        android:id="@+id/action_my_formula"-->
+<!--        android:icon="@drawable/ic_baseline_settings_64"-->
+<!--        android:title="我的配方"-->
+<!--        app:showAsAction="never"-->
+<!--        android:textSize="24sp"/>-->
+
+
+
+</menu>

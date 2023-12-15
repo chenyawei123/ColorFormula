@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_below="@+id/main_head"
+        >
+
+        <TextView
+            android:id="@+id/id_tv_find"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="查找设备"
+            android:textColor="@color/tab_text_black_green_selector"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/id_tv_bond"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="绑定设备"
+            android:textColor="@color/tab_text_black_green_selector"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_ry_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_ry_bond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
